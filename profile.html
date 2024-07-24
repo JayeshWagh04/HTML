@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student|Profile</title>
+
+    <style>
+        #ptofile{ padding-left: 250px;}
+       
+        #frist{ width: 180px; display: inline; padding-right: 40px;}
+
+        .lastname{ margin-left: 3px;}
+        
+        #last{display: inline;  padding-right: 40px;}
+            
+        .birth{margin-right: 70px ;}
+            
+         #place{ display: inline; padding-right: 35px;}
+            
+        .userage{ margin-left: 12px;}
+        
+        #myage{ display: inline; padding-right: 40px;}
+            
+        .usergender{ margin-right: 15px;}
+        
+        #mygender{display: inline; padding-right: 45px;}
+            
+        .useradd{ display: flex; align-items: center; margin-left: 544px; }
+
+         #add{ display: inline; margin-left:20px }
+
+        .p_add{ display: flex; align-items: center; margin-left: 546px; }
+     
+        #padd{ display: inline; margin-left: 7px;}
+
+    </style>
+      
+</head>
+<body>
+    <form action="" align="center" style="margin-top: 150px;">
+        <h3 id="ptofile">Create Profile</h3>
+
+        <div class="fristname">
+            <label for="f_name"><h3 id="frist">First Name:</h3></label>
+            <div id="frist">            
+                <input type="text" id="f_name" name="f_name" placeholder="First Name" required> 
+            </div>        
+        </div>
+
+        <div class="lastname">
+            <label for="l_name"><h3 id="last">Last Name:</h3></label>
+            <div id="last">
+                <input type="text" id="l_name" name="l_name" placeholder="Last Name" required>
+            </div>
+        </div>
+
+        <div class="birth">
+            <label for="dob"><h3 id="place">Date of Birth:</h3></label>
+            <div id="place">
+                <input type="date" id="dob" name="dob" required>    
+            </div>
+        </div>
+
+        <div class="userage">
+            <label for="age"><h3 id="myage">Enter age:</h3></label>
+            <div id="myage">
+                <input type="number" name="age" id="age" placeholder="Age" required>
+            </div>
+        </div>
+
+        <div class="usergender">
+            <label for=""><h3 id="mygender">Gender:</h3></label>
+            <div id="mygender">
+                <input type="radio" name="gender" id="gender1" value="m" checked><label for="gender1">Male</label>
+                <input type="radio" name="gender" id="gender2" value="f" ><label for="gender2">Female</label>
+            </div>
+        </div>
+
+        <div class="useradd">
+            <label for="c_address"><h3 id="add">Current Address:</h3></label> 
+            <div id="add">
+                <textarea name="c_address" id="c_address" rows="10" cols="50" required></textarea>
+
+            </div>
+
+        </div>
+
+
+        <div class="p_add">
+            <label for="p_address"><h3 id="padd">Permenant Address:</h3></label>
+            <div id="padd">
+                <textarea name="p_address" id="p_address" rows="10" cols="50" required></textarea>
+            </div>
+        </div>
+        <br>
+
+        <div id="create">
+            <button type="submit">Create</button>
+        </div>
+
+    </form>
+</body>
+</html>

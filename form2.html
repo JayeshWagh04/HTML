@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Students Profile</title>
+    <style>
+        .A{
+            display: inline;
+            padding-right: 35px;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1>Create Profile</h1>
+    <form >
+        <table align="center">
+           <tr>
+            <td> <label for="username">First Name:</label></td>
+            <td><input type="text" name="username" id="username" placeholder="First Name"></td>
+           </tr>
+           <tr>
+            <td><label for="last">Last Name:</label></td>
+            <td><input type="text" name="last" id="last" placeholder="Last Name"></td>
+           </tr>
+          <tr class="A">
+            <td><label for="date">Date of birth:</label></td>
+            <td><input type="date" name="date" id="date"></td>
+          </tr>
+           <tr>
+            <td><label for="age">Enter Age:</label></td>
+            <td><input type="number" name="age" id="age" placeholder="Age"></td>
+           </tr>
+           <tr>
+            <td><label for="">Gender:</label></td>
+            <td><input type="radio" name="gender" id="gender1" checked> <label for="gender1">Male</label>
+            <input type="radio" name="gender" id="gender2"> <label for="gender2">Female</label></td>
+           </tr>
+           <tr>
+            <td><label for="area">Current Address:</label></td>
+            <td><textarea name="area" id="area"></textarea></td>
+           </tr>
+           <td><label for="parmanent">Parmanente Address:</label></td>
+           <td><textarea name="parmanent" id="parmanent"></textarea></td>
+        </table>
+        <input type="submit" value="Create">
+    </form>
+</body>
+</html>
